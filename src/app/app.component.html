@@ -1,3 +1,26 @@
-<h1>
-  {{title}}
-</h1>
+<div class="body">
+<nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" [routerLink]="['']">Pick A Trip</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        
+    </ul>
+    <div class="center-text" *ngIf="screenWidth > 991">
+        <button type="button" class="btn btn-outline-primary no-border" [routerLink]="['/login']">Login</button>
+        <button type="button" class="btn btn-outline-danger" [routerLink]="['/register']">Create an account</button>
+
+
+    </div>
+    <div class="center-text" *ngIf="screenWidth < 992">
+    
+            <button type="button" class="btn btn-outline-primary no-border" [routerLink]="['/login']"  data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">Login</button>
+        <button type="button" class="btn btn-outline-danger" [routerLink]="['/register']"  data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">Create an account</button>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+</div>
