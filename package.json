@@ -32,7 +32,7 @@
   "dependencies": {
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
+    "@angular/core": "^11.0.5",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
     "@angular/platform-browser": "^4.0.0",
@@ -43,7 +43,7 @@
     "core-js": "^2.4.1",
     "express": "^4.15.2",
     "jquery": "^3.1.1",
-    "materialize-css": "^0.98.2",
+    "materialize-css": "^0.99.0",
     "normalize.css": "^6.0.0",
     "rxjs": "^5.1.0",
     "tether": "^1.4.0",
